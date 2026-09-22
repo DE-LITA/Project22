@@ -263,7 +263,7 @@ public class OrderIntakeServiceTests
     [Fact]
     public void NullInput_ReturnsSingleMalformedInputError()
     {
-        var result = _service.Process(null!);
+        var result = _service.Process(null);
 
         Assert.Equal("Rejected", result.Status);
         Assert.Null(result.Order);

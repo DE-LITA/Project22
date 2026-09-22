@@ -5,7 +5,7 @@ namespace OrderIntake;
 
 public class OrderIntakeService
 {
-    public OrderResult Process(string json)
+    public OrderResult Process(string? json)
     {
         if (string.IsNullOrWhiteSpace(json))
         {
